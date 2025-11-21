@@ -11,7 +11,7 @@ Live Website:
 ## 📂 Source Code
 
 GitHub Repository:  
-👉 https://github.com/abhinavtiwari11/Abhinav-recipe.git
+👉 https://github.com/abhinavtiwari11/abhinav-recipe-manager-app
 
 
 ---
@@ -97,7 +97,7 @@ Clearing browser storage resets the app
 
 Abhinav Tiwari
 
-GitHub: https://github.com/abhinavtiwari11
+GitHub:https://github.com/abhinavtiwari11/abhinav-recipe-manager-app
 
 Portfolio: https://abhinavtiwari11.github.io/abhinav-recipe-manager-app/
 
