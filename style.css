@@ -18,6 +18,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: antiquewhite;
   font-family: "Poppins", sans-serif;
 }
 
@@ -31,7 +32,7 @@ body {
    Header
 ================================ */
 .site-header {
-    background: #12343b;
+  background: #12343b;
   padding: 20px;
   box-shadow: var(--shadow);
   position: sticky;
@@ -58,18 +59,20 @@ body {
   border: 1px solid #ddd;
   border-radius: var(--radius);
   font-size: 14px;
+  background-color: antiquewhite;
+  color: black;
 }
 
 #addRecipeBtn {
-  background: var(--accent);
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  border-radius: var(--radius);
-  cursor: pointer;
-  transition: 0.2s ease;
+    background: brown;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: 0.2s 
+ease;
 }
-
 #addRecipeBtn:hover {
   background:#c80909;
 
@@ -94,6 +97,7 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   transition: all 0.25s ease;
   cursor: pointer;
+  background-color:#12343b
 }
 
 .card:hover {
@@ -111,6 +115,7 @@ body {
 .card h3 {
   font-size: 20px;
   margin-bottom: 6px;
+  color: antiquewhite;
 }
 
 .card p {
@@ -130,6 +135,7 @@ body {
   padding: 4px 10px;
   border-radius: var(--radius);
   font-size: 12px;
+  color: #12343b;
 }
 
 /* ================================
@@ -199,7 +205,8 @@ body {
 }
 
 .backBtn {
-  background: #ddd;
+  background: antiquewhite;
+  color: #12343b;
   padding: 8px 14px;
   border-radius: var(--radius);
   border: none;
