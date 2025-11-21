@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Recipe Manager </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1> 🍽️ Recipe Manager App </h1>
+    <div class="controls">
+      <input id="searchInput" type="search" placeholder="Search recipes by title..." />
+      <select id="difficultyFilter">
+        <option value="All">All</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+        
+      </select>
+      <input id="maxTimeFilter" type="number" min="0" placeholder="Max prep time (min)" />
+      <button id="addRecipeBtn">+ Add Recipe</button>
+    </div>
+  </header>
+
+  <main id="homeView" class="view">
+    <section id="recipesGrid" class="grid"></section>
+    
+    </div>
+  </main>
+
+  <!-- Detail View -->
+  <main id="detailView" class="view hidden">
+    <button class="backBtn" id="backToListBtn">← Back</button>
+    <article id="recipeDetail" class="card detail"></article>
+  </main
+
+  <!-- Form View -->
+  <main id="formView" class="view hidden">
+    <button class="backBtn" id="cancelFormBtn">← Cancel</button>
+    <form id="recipeForm" class="card form">
+      <h2 id="formTitle">Add Recipe</h2>
+      <div class="field">
+        <label>Title *</label>
+        <input name="title" id="title" required minlength="3" maxlength="50" />
+        <small class="error" data-for="title"></small>
+      </div>
+
+      <div class="field">
+        <label>Description *</label>
+        <textarea name="description" id="description" rows="3" required minlength="10"></textarea>
+        <small class="error" data-for="description"></small>
+      </div>
+
+      <div class="field">
+        <label>Ingredients * (one per line)</label>
+        <textarea name="ingredients" id="ingredients" rows="4" required minlength="3"></textarea>
+        <small class="error" data-for="ingredients"></small>
+      </div>
+
+      <div class="field">
+        <label>Steps * (one per line)</label>
+        <textarea name="steps" id="steps" rows="6" required minlength="5"></textarea>
+        <small class="error" data-for="steps"></small>
+      </div>
+
+      <div class="two-col">
+        <div class="field">
+          <label>Prep Time (min) *</label>
+          <input type="number" name="prepTime" id="prepTime" min="0" required />
+          <small class="error" data-for="prepTime"></small>
+        </div>
+
+        <div class="field">
+          <label>Cook Time (min)</label>
+          <input type="number" name="cookTime" id="cookTime" min="0" step="1" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Difficulty *</label>
+        <select id="difficulty" required>
+          <option value="">Select</option>
+          <option>Easy</option>
+          <option>Medium</option>
+          <option>Hard</option>
+        </select>
+        <small class="error" data-for="difficulty"></small>
+      </div>
+
+      <div class="field">
+        <label>Image URL (optional)</label>
+        <input id="imageUrl" type="url" placeholder="https://example.com/image.jpg" />
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" id="saveBtn">Save</button>
+        <button type="button" id="deleteBtn" class="delete hidden">Delete</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <small>Ⓒ Ahmed Bilal's Recipe Manager App — All Rights Reserved.</small>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
