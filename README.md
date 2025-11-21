@@ -53,7 +53,7 @@ All recipes are stored in:
     "prepTime": 20,
     "cookTime": 10,
     "difficulty": "Medium",
-    "imageUrl": "https://some-image-url.jpg"
+    "imageUrl": ""
   }
 ]
 
